@@ -1,18 +1,19 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
 
 namespace NeverIHaveEver
 {
-    class RequestingQuestions
+    public class RequestingQuestions
     {
         /// <summary>
         /// This class creates a file containing list of questions that are downloaded form a server separated by end of line. You can provide Your own server uri.
         /// </summary>
         /// <param name="uri" = https://django-learning-app.herokuapp.com/whatever/ ></param>
         /// <returns>Returns True if everything worked fine, otherwise throws an exception.</returns>
-        public Boolean Get(string uri = "https://django-learning-app.herokuapp.com/whatever/")
+        public static Boolean Get(string uri = "https://django-learning-app.herokuapp.com/whatever/")
         {
             try
             {
@@ -41,11 +42,12 @@ namespace NeverIHaveEver
                                 try
                                 {
                                     using (System.IO.StreamWriter file =
-                                        new System.IO.StreamWriter(@"Data\questions.txt"))
+                                        new System.IO.StreamWriter(@"Data/questions.txt"))
                                     {
                                         for (int i = 1; i < dic.Count + 1; i++)
                                         {
                                             file.WriteLine(dic[i]);
+                                            Console.WriteLine(dic[i]);
                                         }
                                     }
                                 }
