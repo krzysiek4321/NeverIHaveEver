@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeverIHaveEver.LeftPage" BackgroundColor="Black">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0"/>
+    </ContentPage.Padding>
+    <AbsoluteLayout>
+        <StackLayout 
+            AbsoluteLayout.LayoutBounds="0.5, 0.3, 0.8, 50" 
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+
+            <Button 
+                Text="Contact"
+                TextColor="White"
+                BackgroundColor="#080808"
+                Clicked="Button_Clicked"/>
+
+        </StackLayout>
+        <StackLayout 
+            AbsoluteLayout.LayoutBounds="0.5, 0.5, 0.8, 50" 
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+
+            <Button 
+                Text="Rules"
+                TextColor="White"
+                BackgroundColor="#080808"
+                Clicked="Button_Clicked_1"/>
+
+        </StackLayout>
+        <StackLayout 
+            AbsoluteLayout.LayoutBounds="0.5, 0.7, 0.8, 50" 
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+
+            <Button 
+                Text="Rate us!"
+                TextColor="White"
+                BackgroundColor="#080808"
+                Clicked="Button_Clicked_2"/>
+
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
