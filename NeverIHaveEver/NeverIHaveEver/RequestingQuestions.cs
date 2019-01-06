@@ -13,14 +13,17 @@ namespace NeverIHaveEver
         /// </summary>
         /// <param name="uri" = https://django-learning-app.herokuapp.com/whatever/ ></param>
         /// <returns>Returns True if everything worked fine, otherwise throws an exception.</returns>
-        public static Boolean Get(string uri = "https://django-learning-app.herokuapp.com/whatever/")
+        public static readonly string dataDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Data");
+        public static Boolean Get(string uri = "https://django-learning-app.herokuapp.com/whatever/",string QfileName = "questions.txt")
         {
             try
             {
-                if (!Directory.Exists("Data")) System.IO.Directory.CreateDirectory("Data");
+                System.IO.Directory.CreateDirectory(dataDir);
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(dataDir);
                 throw new Exception("Failed to create folder", e);
             }
             try
@@ -42,7 +45,7 @@ namespace NeverIHaveEver
                                 try
                                 {
                                     using (System.IO.StreamWriter file =
-                                        new System.IO.StreamWriter(@"Data/questions.txt"))
+                                        new System.IO.StreamWriter(Path.Combine(dataDir,QfileName)))
                                     {
                                         for (int i = 1; i < dic.Count + 1; i++)
                                         {

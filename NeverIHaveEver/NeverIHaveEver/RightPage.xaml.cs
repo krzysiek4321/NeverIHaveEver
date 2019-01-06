@@ -19,7 +19,14 @@ namespace NeverIHaveEver
 		public RightPage ()
 		{
 			InitializeComponent ();
-            RequestingQuestions.Get();
+            bool getSuccess = false;
+            do {
+                try { RequestingQuestions.Get(); getSuccess = true; }
+                catch (Exception e)
+                {
+                    /* no internet or server down */
+                }
+            } while (!getSuccess);
             ReadAllQuestions();
 
             if (questionFileNameList == null)
@@ -36,7 +43,7 @@ namespace NeverIHaveEver
 
         public void ReadAllQuestions()
         {
-            DirectoryInfo d = new DirectoryInfo(@"Data/");
+            DirectoryInfo d = new DirectoryInfo(RequestingQuestions.dataDir);
 
             if (d.Exists)
             {
