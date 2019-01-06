@@ -19,14 +19,7 @@ namespace NeverIHaveEver
 		public RightPage ()
 		{
 			InitializeComponent ();
-            bool getSuccess = false;
-            do {
-                try { RequestingQuestions.Get(); getSuccess = true; }
-                catch (Exception e)
-                {
-                    /* no internet or server down */
-                }
-            } while (!getSuccess);
+            
             ReadAllQuestions();
 
             if (questionFileNameList == null)

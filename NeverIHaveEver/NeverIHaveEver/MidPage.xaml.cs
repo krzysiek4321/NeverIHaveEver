@@ -15,6 +15,16 @@ namespace NeverIHaveEver
 		public MidPage ()
 		{
 			InitializeComponent ();
-		}
+
+            bool getSuccess = false;
+            do
+            {
+                try { RequestingQuestions.Get(); getSuccess = true; }
+                catch (Exception e)
+                {
+
+                }
+            } while (!getSuccess);
+        }
 	}
 }
