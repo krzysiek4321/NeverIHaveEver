@@ -7,5 +7,10 @@
                 HorizontalOptions="CenterAndExpand"
                  Padding="40">
         <Image Source="welcome_image.png"/>
+        <Label Text="Connecting to server..."
+               FontSize="Medium"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               Margin="20"/>
     </StackLayout>
 </ContentPage>

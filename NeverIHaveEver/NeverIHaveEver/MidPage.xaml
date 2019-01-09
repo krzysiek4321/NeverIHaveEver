@@ -8,7 +8,7 @@
     </ContentPage.Padding>
     <AbsoluteLayout>
         <StackLayout 
-            AbsoluteLayout.LayoutBounds="0, 0.1, 1, 0.5" 
+            AbsoluteLayout.LayoutBounds="0, 0.01, 1, 0.5" 
             AbsoluteLayout.LayoutFlags="All"
             HorizontalOptions="Center">
             <Label Text="NEVER"
@@ -30,5 +30,13 @@
             HorizontalTextAlignment="Center"
             AbsoluteLayout.LayoutBounds="0.5, 1, 0.8, 80" 
             AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+
+        <Label Text="swipe" TextColor="White" FontSize="Medium"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5, 1, 0.1"
+               AbsoluteLayout.LayoutFlags="All" HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+
+        <Image Source="arrow_l" AbsoluteLayout.LayoutBounds="0, 0.5, 50, 500" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        <Image Source="arrow_r" AbsoluteLayout.LayoutBounds="1, 0.5, 50, 500" AbsoluteLayout.LayoutFlags="PositionProportional"/>
     </AbsoluteLayout>
 </ContentPage>

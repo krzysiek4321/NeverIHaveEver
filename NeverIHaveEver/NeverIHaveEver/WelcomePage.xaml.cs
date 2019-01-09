@@ -53,7 +53,7 @@ namespace NeverIHaveEver
                 catch (Exception e)
                 {
                     Console.WriteLine(e);
-                    await DisplayAlert("Internet", "Turn on your Internet connection to get the newest questions", "OK");
+                    await DisplayAlert("No Internet Access", "Please check your online settings", "OK");
                 }
             } while (getSuccess != true);
         }   
