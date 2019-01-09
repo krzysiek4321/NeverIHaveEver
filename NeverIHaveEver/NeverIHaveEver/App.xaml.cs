@@ -11,18 +11,12 @@ namespace NeverIHaveEver
         {
             InitializeComponent();
 
-            CarouselPage carouselPage = new CarouselPage();
-            carouselPage.Children.Add(new LeftPage());
-            carouselPage.Children.Add(new MidPage());
-            carouselPage.Children.Add(new RightPage());
-            carouselPage.CurrentPage = carouselPage.Children[1];
-
-            MainPage = carouselPage;
+            MainPage = new WelcomePage();
         }
 
         protected override void OnStart()
         {
-            
+            // Handle when your app sleeps
         }
 
         protected override void OnSleep()

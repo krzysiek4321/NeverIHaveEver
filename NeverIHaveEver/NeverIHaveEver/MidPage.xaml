@@ -22,13 +22,13 @@
                    FontSize="55"/>
         </StackLayout>
 
-
         <Label
             x:Name="quotes_lbl"
             Text="Stop talk, show me the code!"
             TextColor="White"
             HorizontalOptions="Center"
-            AbsoluteLayout.LayoutBounds="0.5, 0.9, 1, 50" 
+            HorizontalTextAlignment="Center"
+            AbsoluteLayout.LayoutBounds="0.5, 1, 0.8, 80" 
             AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
     </AbsoluteLayout>
 </ContentPage>

@@ -24,7 +24,7 @@ namespace NeverIHaveEver
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {
-
+            Navigation.PushModalAsync(new RulesPage());
         }
 
         private void Button_Clicked_2(object sender, EventArgs e)

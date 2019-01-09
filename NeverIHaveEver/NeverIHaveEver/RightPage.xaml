@@ -12,9 +12,10 @@
             Text="Let's play!"
             FontSize="23"
             TextColor="White"
-            AbsoluteLayout.LayoutBounds="0.5, 0.35, 0.5, 50"
-            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            AbsoluteLayout.LayoutBounds="0.5, 0.35, 0.8, 100"
+            AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
         <Button 
             Text="Next"
             FontSize="16"
