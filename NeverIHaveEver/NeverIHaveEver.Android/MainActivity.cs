@@ -14,6 +14,8 @@ namespace NeverIHaveEver.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Android.Gms.Ads.MobileAds.Initialize(ApplicationContext, "ca-app-pub-4133089494678561~1035382329");
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

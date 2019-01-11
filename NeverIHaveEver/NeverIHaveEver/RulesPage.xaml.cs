@@ -22,4 +22,12 @@ namespace NeverIHaveEver
             Navigation.PopModalAsync();
         }
     }
+
+    public class AdMobView : ContentView
+    {
+        public AdMobView()
+        {
+
+        }
+    }
 }
