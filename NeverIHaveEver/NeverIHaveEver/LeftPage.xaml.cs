@@ -29,7 +29,7 @@ namespace NeverIHaveEver
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://play.google.com/store/apps/developer?id=Billog+Studio"));
+            Device.OpenUri(new Uri("https://play.google.com/store/apps/details?=com.BillogStudio.NeverIHaveEver"));
         }
     }
 }
