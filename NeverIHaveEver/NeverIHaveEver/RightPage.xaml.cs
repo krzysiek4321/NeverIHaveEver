@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static NeverIHaveEver.IAdMobService;
 
 namespace NeverIHaveEver
 {
@@ -53,6 +54,7 @@ namespace NeverIHaveEver
         private void Button_Clicked(object sender, EventArgs e)
         {
             quest_lbl.Text = questions.GetRandomQuestion();
+            //DependencyService.Get<IAdMobService>().ShowAd();
         }
     }
 }

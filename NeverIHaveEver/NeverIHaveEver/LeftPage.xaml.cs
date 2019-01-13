@@ -29,7 +29,7 @@ namespace NeverIHaveEver
 
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://play.google.com/store/apps/details?id=pl.billog_studio.janigdynie_graimprezowa"));
+            Device.OpenUri(new Uri("https://play.google.com/store/apps/developer?id=Billog+Studio"));
         }
     }
 }
