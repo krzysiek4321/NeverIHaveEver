@@ -25,7 +25,7 @@ namespace NeverIHaveEver.Droid
             base.OnElementChanged(e);
             if (Control == null)
             {
-                var ad = new AdView(Forms.Context);
+                var ad = new AdView(Android.App.Application.Context);
                 ad.AdSize = AdSize.Banner;
                 ad.AdUnitId = "ca-app-pub-4133089494678561/3825197196";
 

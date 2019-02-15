@@ -14,7 +14,7 @@
             <Label Text="NEVER"
                    TextColor="White"
                    FontSize="55"/>
-            <Label Text="I HAVE"
+            <Label Text="HAVE I"
                    TextColor="White"
                    FontSize="55"/>
             <Label Text="EVER..."

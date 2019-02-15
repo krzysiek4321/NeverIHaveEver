@@ -15,8 +15,10 @@ namespace NeverIHaveEver
 	{
         private List<string> questionFileNameList;
         private Questions questions;
-        
-		public RightPage ()
+        private int x = 1;
+
+
+        public RightPage ()
 		{
 			InitializeComponent ();
             
@@ -54,7 +56,8 @@ namespace NeverIHaveEver
         private void Button_Clicked(object sender, EventArgs e)
         {
             quest_lbl.Text = questions.GetRandomQuestion();
-            //DependencyService.Get<IAdMobService>().ShowAd();
+            if (x % 10 == 0) DependencyService.Get<IAdInterstitial>().ShowAd();
+            x++;
         }
     }
 }

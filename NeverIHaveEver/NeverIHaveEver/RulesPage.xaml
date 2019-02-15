@@ -9,7 +9,7 @@
             AbsoluteLayout.LayoutFlags="All"
             Padding="20">
             <Label TextColor="White" FontSize="Large" Text="Step 1. Everyone should take a beer." />
-            <Label TextColor="White" FontSize="Large" Text="Step 2. Choosen player or one after the other reads 'Never I have ever...'." />
+            <Label TextColor="White" FontSize="Large" Text="Step 2. Choosen player or one after the other reads 'I have never...'." />
             <Label TextColor="White" FontSize="Large" Text="Step 3. Players who HAVE DONE fallowing statment take a gulp." />
             <Label TextColor="White" FontSize="Large" Text="Step 4. Come back to step 2." />
             <Label TextColor="White" FontSize="Large" Text="Have a fun!" 
